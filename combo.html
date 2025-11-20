@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu Combo | City Toys</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-com-carrinho">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                City <span class="cor-destaque">Toys</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+                
+                <li><a href="index.html#brinquedos" class="nav-link">Brinquedos</a></li>
+
+                <li><a href="index.html#depoimentos" class="nav-link">Depoimentos</a></li>
+                
+                <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                
+                <li><a href="combo.html" class="btn-nav-cta">Monte seu Combo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header-combo">
+        <div class="container">
+            <h1>Monte seu Combo da Semana</h1>
+            <p>Escolha <strong>3 brinquedos</strong>. Promoção válida de Segunda a Quinta.</p>
+            
+            <div class="progresso-container">
+                <div class="passo ativo">1. Escolha</div>
+                <div class="linha"></div>
+                <div class="passo">2. WhatsApp</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="catalogo-selecao">
+        <div class="container">
+            
+            <div class="container-filtros">
+                <button class="btn-filtro ativo" data-filter="todos">Todos</button>
+                <button class="btn-filtro" data-filter="pequeno">Pequenos</button>
+                <button class="btn-filtro" data-filter="medio">Médios</button>
+                <button class="btn-filtro" data-filter="grande">Grandes</button>
+            </div>
+
+            <div class="grid-destaques" id="grid-produtos">
+
+        <div class="card-destaque item-selecionavel" data-categoria="pequeno" data-id="1" data-nome="Piscina de Bolinhas">
+            <div class="card-destaque-img">
+                <img src="assets/piscina-bolinhas.png" alt="Piscina de Bolinhas">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Piscina de Bolinhas</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>1-6 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Pequeno</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="pequeno" data-id="2" data-nome="Totó (Pebolim)">
+            <div class="card-destaque-img">
+                <img src="assets/toto.png" alt="Totó Pebolim">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Totó (Pebolim)</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>5+ anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Pequeno</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="pequeno" data-id="3" data-nome="Fliperama Arcade">
+            <div class="card-destaque-img">
+                <img src="assets/fliperama.png" alt="Fliperama Arcade">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Fliperama Arcade</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>6+ anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Compacto</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="medio" data-id="4" data-nome="Cama Elástica 2,44m">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/pula pula 2,44.jpg" alt="Cama Elástica 2,44m">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Cama Elástica 2,44m</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>2-10 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Médio</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="medio" data-id="5" data-nome="Castelinho Inflável">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/castelinho.jpg" alt="Castelinho Pula Pula">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Castelinho Inflável</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>2-7 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Médio</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="6" data-nome="Touro Mecânico">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/touro mecânico.jpg" alt="Touro Mecânico">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Touro Mecânico</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>6-Adulto</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Grande</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="7" data-nome="Futebol de Sabão 4x8">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/futebol de sabão4x8,jpg.webp" alt="Futebol de Sabão">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Futebol de Sabão 4x8</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>Livre</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Gigante</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="8" data-nome="Tobogã Premium">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/tobogã premium .jpg" alt="Tobogã Premium">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Tobogã Premium</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Grande</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="9" data-nome="Pula Pula 3,05m">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/pula pula 3,05.jpg" alt="Pula Pula 3,05">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Pula Pula 3,05m</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Grande</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="10" data-nome="Tobogã Colorex">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/tobogã colorex .jpg" alt="Tobogã Colorex">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Tobogã Colorex</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Grande</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="11" data-nome="Tobogã Gigante">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/tobogã gigante.jpg" alt="Tobogã Gigante">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Tobogã Gigante</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Grande</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="12" data-nome="Toboágua Splash">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/toboagua.png" alt="Toboágua Splash">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Toboágua Splash</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Grande</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="13" data-nome="Toboágua Gigante">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/" alt="Toboágua Gigante">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Toboágua Gigante</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Grande</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="grande" data-id="14" data-nome="Guerra de Cotonete">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/guerra de cotonete.jpg" alt="Guerra de Cotonete">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Guerra de Cotonete</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Grande</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="medio" data-id="15" data-nome="Tigrinho">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/tigrinho .jpg" alt="Tigrinho">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Tigrinho</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Médio</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="medio" data-id="16" data-nome="Legolândia">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/" alt="Legolândia">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Legolândia</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Médio</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="medio" data-id="17" data-nome="Mini Circuito">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/mini circuito.jpg" alt="Mini Circuito">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Mini Circuito</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Médio</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="pequeno" data-id="18" data-nome="Piscina Dino">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/" alt="Piscina Dino">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Piscina Dino</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Pequeno</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="pequeno" data-id="19" data-nome="Air Game">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/" alt="Air Game">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Air Game</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Pequeno</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+        <div class="card-destaque item-selecionavel" data-categoria="pequeno" data-id="20" data-nome="Área Baby">
+            <div class="card-destaque-img">
+                <img src="assets/brinquedos/area baby.jpg" alt="Área Baby">
+            </div>
+            <div class="card-destaque-info">
+                <h3>Área Baby</h3>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path></svg>
+                        <span>4-12 anos</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M6 12v-3M10 12v-3M14 12v-3M18 12v-3"></path></svg>
+                        <span>Pequeno</span>
+                    </div>
+                </div>
+                <button class="btn-adicionar">Selecionar</button>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+    <div class="barra-carrinho animate-up">
+        <div class="info-carrinho">
+            <span id="contador-itens">0/3 Selecionados</span>
+            <div class="slots-visuais">
+                <div class="slot"></div>
+                <div class="slot"></div>
+                <div class="slot"></div>
+            </div>
+        </div>
+        <button id="btn-finalizar" class="btn-finalizar" disabled>
+            Escolha 3 itens
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
